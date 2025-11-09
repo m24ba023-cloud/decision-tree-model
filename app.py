@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 # Load trained model
-loaded_dt_model = joblib.load('decision_tree_model(1).joblib','rb')
+loaded_dt_model = joblib.load('decision_tree_model(1).joblib',"rb")
 
 # Define feature names
 feature_names = [
@@ -65,4 +65,5 @@ if st.button('Predict Delivery Delay Status'):
         st.success(f"The predicted delivery status is: {result}")
 
 st.info("A prediction of 'Delayed' means the delivery is likely to be late.")
+
 
